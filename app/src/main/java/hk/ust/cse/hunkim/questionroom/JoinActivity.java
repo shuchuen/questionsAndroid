@@ -29,7 +29,7 @@ public class JoinActivity extends Activity {
 
         // Set up the login form.
         roomNameView = (TextView) findViewById(R.id.room_name);
-
+        roomNameView.setText("comp3111");
         roomNameView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
@@ -39,6 +39,8 @@ public class JoinActivity extends Activity {
                 return true;
             }
         });
+
+        attemptJoin(null);
     }
 
 
